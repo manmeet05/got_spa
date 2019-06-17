@@ -1,0 +1,62 @@
+<section *ngIf="house">
+  <!-- description -->
+  <section>
+    <h2>You selected: {{house.name}}</h2>
+    <h3>Description</h3>
+    <p>
+      Below is the description about the : {{house.name}} .
+    </p>
+  </section>
+
+<!-- Below is the View for every Attribute that is returned from the Houses API Information-->
+  <section>
+      <!-- Name: of the House-->
+      <div>        
+          <b><label for="name">Name: </label><p></b>
+        <!--<input type="text" name="name" [(ngModel)]="house.name" #name="ngModel">-->
+        {{house.name}}
+      </div><p></p>
+      <!-- Coat of Arms: of the House-->
+      <div>        
+          <b><label for="coatOfArms">Coat of Arms: </label><p></b>
+        <!--<input type="string" name="coatOfArms" [(ngModel)]="house.coatOfArms">-->
+        {{house.coatOfArms}}
+      </div><p></p>
+      <!-- Words: of the House-->
+      <div>
+          <b><label for="words">Words: </label><p></b>
+        <!--<input type="string" name="words" [(ngModel)]="house.words">-->
+        {{house.words}}
+      </div><p></p>
+      <!-- Region: of the House-->
+      <div>
+          <b><label for="region">Region: </label><p></b>
+        <!--<input type="string" name="region" [(ngModel)]="house.region">-->
+        {{house.region}}
+      </div> 
+      <p></p>
+      <!-- Overlord: of the House-->     
+      <div>
+          <b><label for="Overlord">Overlord: </label><p></b>
+        <!--<input type="string" name="overlord" [(ngModel)]="house.overlord">-->
+        {{house.overlord}}
+      </div><p></p>
+      <!-- Founded: the House-->
+      <div>
+          <b><label for="Founded">Founded: </label><p></b>
+        <!--<input type="string" name="founded" [(ngModel)]="house.founded">-->
+        {{house.founded}}
+      </div><p></p>
+      <!-- Founder: of the House-->
+      <div>
+          <b><label for="Founder">Founder: </label><p></b>
+        <!--<input type="string" name="founder" [(ngModel)]="house.founder">-->
+        {{house.founder}}
+      </div><p></p>
+
+      
+  </section>
+  <p></p>
+
+  <button (click)="gotoHousesList()">Back to Houses list</button>
+<section>
